@@ -1,0 +1,22 @@
+{
+    "dono": "6000646692",
+    "manutencao": "false",
+    "userDono": "@zxyddy2",
+    "versao": "2.1.1",
+    "updateDAte": "18/02/2021 as 21:28",
+    "price": {
+        "Gold": 30,
+        "Default": 30,
+        "standard": 10,
+        "default": 5,
+        "prepaid": 5,
+        "gold": 30
+    },
+    "pricemix": {
+        "2": 10,
+        "default": 15,
+        "3": 50
+    },
+    "welcome": "Olá {nome}, Seja bem vindo!\n\n[❓ Dúvidas](t.me/styleccs)\n[👥 Grupo](t.me/styleccschat)\n[📢 Canal](t.me/styleccsref)\n[⚙️ Dev](t.me/bartof)",
+     "valorpix": "Olá {nome}, Seja bem vindo!\n\n[❓ Dúvidas](t.me/styleccs)\n[👥 Grupo](t.me/styleccschat)\n[📢 Canal](t.me/styleccsref)\n[⚙️ Dev](t.me/bartof)"
+}

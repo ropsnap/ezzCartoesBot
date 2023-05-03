@@ -1,0 +1,22 @@
+{
+    "2028738093": {
+        "ccs": [
+            {
+                "cc": {
+                    "cc": "5502099363263538",
+                    "mes": "01",
+                    "ano": "2029",
+                    "cvv": "093",
+                    "nome": "Manuel Emanuel Baptista",
+                    "cpf": "463.802.103-42",
+                    "bandeira": "MASTERCARD",
+                    "nivel": "gold",
+                    "tipo": "CREDIT",
+                    "banco": "Nao desponivel",
+                    "pais": "Brasil"
+                },
+                "date": "22-09-2021 22:10:13"
+            }
+        ]
+    }
+}
