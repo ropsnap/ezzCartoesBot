@@ -45,7 +45,7 @@ function adm($message){
 			$menu .= "/addsaldo - add saldo a um usuário\n";
 			$menu .= "/resaldo - remove saldo de um usuário!\n";
 			$menu .= "/getsaldo - obter o saldo de um usuario!\n";
-			$menu .= "/gGift - gera um git para resgata saldo\n";
+			$menu .= "/gift - gera um git para resgata saldo\n";
 			$menu .= "/users - LISTA OS USUARIO DO BOT\n";
 			$menu .= "/setwelcome - adiciona uma msg de boas vindas\n";
 			$menu .= "/addadmin - adiciona um admin\n";

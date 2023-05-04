@@ -874,7 +874,13 @@ function mostrarpix($message){
 	,]];
 
 
-	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "pix email: paiapropeylal@gmail.com\nNome:Carlos\nBanco: Mercadopago\n\nComprovante: @styleccs","reply_to_message_id"=> $message['message_id'],  "parse_mode" => 'Markdown',"reply_markup" =>$menu));
+	bot("editMessageText",array( 
+		"message_id" => $message['message_id'] , 
+		"chat_id"=> $chat_id , 
+		"text" => $confibot.pix_message,
+		"reply_to_message_id"=> $message['message_id'],  
+		"parse_mode" => 'Markdown',
+		"reply_markup" =>$menu ));
 }
 
 
