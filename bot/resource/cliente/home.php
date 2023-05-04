@@ -1873,6 +1873,6 @@ function ccmix($message){
 	$menu['inline_keyboard'] = $add;
 	$menu['inline_keyboard'][] = [['text'=>"← Voltar",'callback_data'=>"volta_loja"]];
 
-	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "Está area é resevada para os mix, caso não tenha o mix que você estaja procurando, entre em contato com o nosso vendedor: *{$confibot['userDono']}*.\n$tabela","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
+	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "Está area é resevada para os pacotes mix. Caso não tenha o mix que você procura, entre em contato com o vendedor: *{$confibot['userDono']}* \n $tabela","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
 	
 }
