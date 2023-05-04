@@ -659,7 +659,7 @@ Exemplo:
 		$salva = file_put_contents('./gifts.json', $dsalva);
 
 		if ($salva){
-			bot("sendmessage",array("chat_id" => $chat_id , "text" => "<b>Sucesso ao cria o codigo\nCodigo:</b> <code>$gif</code>\n<b>Valor:</b> $valor (saldo)\n\n⚠️<b>Obs: Este codigo so pode ser usando uma vez!</b>" , "parse_mode" => "html"));
+			bot("sendmessage",array("chat_id" => $chat_id , "text" => "<b>Sucesso ao cria o codigo\nCodigo:</b> <code>$gif</code>\n<b>Valor:</b> $valor R$\n\n⚠️<b>Obs: Este codigo so pode ser usando uma vez!</b>" , "parse_mode" => "html"));
 		}else{
 			bot("sendmessage",array("chat_id" => $chat_id , "text" => "Error ao Gera Gift !!" , "parse_mode" => "html"));
 		}

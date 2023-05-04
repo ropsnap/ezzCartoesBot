@@ -461,7 +461,7 @@ function saldocomprado($message){
 
 	foreach ($one as $value) {
 		$txt .= "*Codigo:* {$value[codigo]}\n";
-		$txt .= "*Valor:* {$value[valor]} (saldo)\n";
+		$txt .= "*Valor:* {$value[valor]},00 R$\n";
 		$txt .= "*Expira:* ".date("d/m/Y H:i:s" , $value['datelimite'])."\n";
 		$txt .= "*Comprado em:* ".date("d/m/Y H:i:s" , $value['date'])."\n\n";
 	}
@@ -514,7 +514,7 @@ function altersaldoe($message,$query,$type , $position){
 
 	foreach ($dadoscc as $value) {
 		$txt .= "*Codigo:* {$value[codigo]}\n";
-		$txt .= "*Valor:* {$value[valor]} (saldo)\n";
+		$txt .= "*Valor:* {$value[valor]},00 R$\n";
 		$txt .= "*Expira:* ".date("d/m/Y H:i:s" , $value['datelimite'])."\n";
 		$txt .= "*Comprado em:* ".date("d/m/Y H:i:s" , $value['date'])."\n\n";
 	}
@@ -1865,7 +1865,7 @@ function ccmix($message){
 			$valor = $openccs['pricemix']['default'];
 		}
 
-		$tabela .= "\n".'💳 Mix '.strtoupper($key).' → '.$valor." (saldo)\n";
+		$tabela .= "\n".'💳 Mix '.strtoupper($key).' → '.$valor.",00 R$\n";
 		$total = sizeof($mix[$key]);
 		$array[] = ['text'=>"Mix $key - disponiveis ($total)",'callback_data'=>"compramix_{$key}_$valor"];
 	}
