@@ -410,7 +410,7 @@ function menu_infos($message){
 
 
 
- $txt .= "🏷️ *Nome:* {$cliente[nome]}\n";
+ $txt .= "🏷️ *Nome:* {$cliente["nome"]} \n";
 
 
 
