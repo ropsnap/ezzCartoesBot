@@ -58,6 +58,7 @@ function clientes($message){
   	['text'=> $confibot["text_btn_informations"] , 'callback_data'=>"menu_infos"]
   ],
 
+
   ]];
 		bot("sendMessage",array("chat_id"=> $chat_id , "text" => $txt,"reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
 	 
