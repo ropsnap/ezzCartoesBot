@@ -32,8 +32,9 @@ function adm($message){
 
 
 	if ($cmd == "admin" || $cmd == "menu"){
+
 			$menu .= "===================================\n";
-			$menu .= "                 [MENU DO BOT AMDIN]\n ";
+			$menu .= "======= [MENU DO BOT AMDIN] =======\n ";
 			$menu .= "===================================\n";
 			$menu .= "/addcc -  adiciona novas ccs\n";
 			$menu .= "/addmix -  adiciona novos mixs\n";
