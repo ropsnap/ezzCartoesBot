@@ -67,7 +67,7 @@ function messages($message){
 function bot($method, $parameters) {
 
 	$token = file_get_contents('./token.txt');
-	$confibot = file_get_contents('./confi.json');
+	$confibot = file_get_contents('./resource/conf.json');
 	$confibot = json_decode($confibot, true);
 	try{
 	  $options = array(
