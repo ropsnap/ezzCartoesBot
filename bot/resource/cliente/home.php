@@ -1681,9 +1681,9 @@ function loja($message){
 
 
 
-$ts1 = $conf['text_store_1'];
-$ts2 = $conf['text_store_2'];
-$ts3 = $conf['text_store_3'];
+$ts1 = $conf["text_store_1"];
+$ts2 = $conf["text_store_2"];
+$ts3 = $conf["text_store_3"];
 
  bot("editMessageText", array( 
  	"message_id" => $message['message_id'], 
