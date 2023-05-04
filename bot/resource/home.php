@@ -1864,7 +1864,7 @@ function ccmix($message){
 			$valor = $openccs['pricemix']['default'];
 		}
 
-		$tabela .= "".'💳 Mix '.strtoupper($key).' → '.$valor.",00 R$ \n";
+		$tabela .= "".'💳 Mix '.strtoupper($key).' → '.$valor.",00 R$";
 		$total = sizeof($mix[$key]);
 		$array[] = ['text'=>"Mix $key - disponiveis ($total)",'callback_data'=>"compramix_{$key}_$valor"];
 	}
