@@ -4,24 +4,32 @@
     "userDono": "@zxyddy2",
     "versao": "2.1.1",
     "updateDAte": "18/02/2021 as 21:28",
+
     "price": {
+        
         "Gold": 30,
-        "Default": 30,
         "standard": 10,
         "default": 5,
         "prepaid": 5,
-        "gold": 30
+        "gold": 30,
+
+        "Default": 30
     },
+
     "pricemix": {
+
         "2": 10,
-        "default": 15,
-        "3": 50
+        "3": 50,
+
+        "default": 15
     },
 
     "welcome": "Oi, {nome}. Seja bem vindo! \n\n [❓ → Dúvidas](t.me/ReiDosCartoesVT) \n [👥 → Grupo](t.me/ezzcartoes_grupo) \n [📢 → Canal](t.me/ezzcartoes) \n [⚙️ → Dev](t.me/bartof)",
     "valorpix": "Oi, {nome}. Seja bem vindo! \n\n [❓ → Dúvidas](t.me/ReiDosCartoesVT) \n [👥 → Grupo](t.me/ezzcartoes_grupo) \n [📢 → Canal](t.me/ezzcartoes) \n [⚙️→ Dev](t.me/bartof)",
     "text_maintain_mode": "Ops... Estou em manutenção no momento.",
     "pix_message": "PIX → lucas.silva.santos@gmail.com \n Nome → Lucas Silva Santos \n Banco → Mercadopago \n\n Comprovante → @ReiDosCartoesVT",
+    
+    // inline buttons texts
     "text_btn_cc_store": "🛍 Loja de CC's",
     "text_btn_add_funds": "💸 + Saldo",
     "text_btn_informations": "ℹ️ Informações"

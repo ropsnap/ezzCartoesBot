@@ -178,21 +178,27 @@ function atualiza($chat_id,$bin){
 
 }
 
-function atualizasaldo($chat_id){
+function atualizasaldo ($chat_id){
 
 	$dados = json_decode(file_get_contents("./usuarios.json") , true);
 
 
-	if (!$dados[$chat_id]){
-		return ;
+	if (!$dados[$chat_id]) {
+		return;
 	}
 
 	$date = strtotime("now");
 	$time =  $dados[$chat_id]['dataLimite'];
 
 	if ($date > $time){
-		$dados[$chat_id]['saldo'] = 0;
-		$dados[$chat_id]['dataLimite'] = 0;
+		
+		if ($dados[$chat_id]['saldo']) {
+			$dados[$chat_id]['saldo'] = 0;
+		}
+
+		if ($dados[$chat_id]['dataLimite']) {
+			$dados[$chat_id]['dataLimite'] = 0;
+		}
 	}
 
 	$dsalva = json_encode($dados,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE + JSON_PRETTY_PRINT );
