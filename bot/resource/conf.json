@@ -17,8 +17,8 @@
         "3": 50,
         "default": 15
     },
-    "welcome": "Oi, {nome} \n\n [❓ → Dúvidas]t.me/ReiDosCartoesVT \n [👥 → Grupo]t.me/ezzcartoes_grupo \n [📢 → Canal]t.me/ezzcartoes \n [⚙️ → Dev]t.me/zxyddy2",
-    "valorpix": "Oi, {nome} \n\n [❓ → Dúvidas]t.me/ReiDosCartoesVT \n [👥 → Grupo]t.me/ezzcartoes_grupo \n [📢 → Canal]t.me/ezzcartoes \n [⚙️→ Dev]t.me/zxyddy2",
+    "welcome": "Oi, {nome} \n\n ❓ Dúvidas → @ReiDosCartoesVT \n 👥 Grupo → @ezzcartoes_grupo \n 📢 Canal → @ezzcartoes \n ⚙️ Coder → @zxyddy2",
+    "valorpix": "Oi, {nome} \n\n ❓ Dúvidas → @ReiDosCartoesVT \n 👥 Grupo → @ezzcartoes_grupo \n 📢 Canal → @ezzcartoes \n ⚙ Coder → @zxyddy2",
     "text_maintain_mode": "Ops... Estou em manutenção no momento.",
     "pix_message": "Transfira o valor da recarga para: \n\n PIX → lucas.silva.santos@gmail.com \n Nome → Lucas Silva Santos \n Banco → Mercadopago \n\n Comprovante → @ReiDosCartoesVT",
     "text_btn_cc_store": "🛍 Loja de CC's",
