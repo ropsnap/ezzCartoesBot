@@ -430,7 +430,7 @@ function menu_infos($message){
 
 
 
- $txt .= "💰 *Seu Saldo:* {$cliente[saldo]}\n";
+ $txt .= "💰 *Seu Saldo:* {$cliente["saldo"]}\n";
 
 
 
