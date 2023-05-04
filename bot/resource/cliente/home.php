@@ -1629,14 +1629,14 @@ function loja($message){
 
 
 
-  [['text'=>"💳 UNITARIA",'callback_data'=>"ccun"]],
+  [['text'=>"💳 Unitária",'callback_data'=>"ccun"]],
 
 
 
 
 
 
-  [['text'=>"🎲 MIX",'callback_data'=>"ccmix"] , ['text'=>"🔐 PESQUISA  BIN",'callback_data'=>"search"]],
+  [['text'=>"🎲 Mix",'callback_data'=>"ccmix"] , ['text'=>"🔐 Consulta de BIN",'callback_data'=>"search"]],
 
 
 
