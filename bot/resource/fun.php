@@ -79,7 +79,7 @@ function deletecc($chat_id , $idcc , $level){
 	return $return;
 }
 
-$nivel = trim($nivel);
+// $nivel = trim($nivel);
 
 function getCc($nivel){
 	$nivel = strtolower($nivel);
