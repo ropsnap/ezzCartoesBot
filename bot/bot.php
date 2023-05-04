@@ -43,7 +43,7 @@ function messages($message){
 			if ($confibot['manutencao'] == "false" ){
 				clientes($message);
 			}else{
-				bot("sendMessage",array("chat_id"=> $chat_id , "text" => "*Ops, Estou em Manutencao no momento!*","reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
+				bot("sendMessage",array("chat_id"=> $chat_id , "text" => $confi.text_maintain_mode,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
 			}
 		}
 
