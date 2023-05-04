@@ -50,14 +50,14 @@ function clientes($message){
 
 
   [
-  	['text'=> $confibot.text_btn_cc_store , 'callback_data'=>"loja"]
+  	['text'=> $conf.text_btn_cc_store , 'callback_data'=>"loja"]
   ],
 
   [
-  	['text'=> $confibot.text_btn_add_funds , 'callback_data'=>"comprasaldo"] , 
-  	['text'=> $confibot.text_btn_informations , 'callback_data'=>"menu_infos"]
+  	['text'=> $conf.text_btn_add_funds , 'callback_data'=>"comprasaldo"] , 
+  	['text'=> $conf.text_btn_informations , 'callback_data'=>"menu_infos"]
   ],
-  
+
   ]];
 		bot("sendMessage",array("chat_id"=> $chat_id , "text" => $txt,"reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
 	 
