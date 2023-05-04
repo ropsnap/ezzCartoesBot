@@ -892,7 +892,7 @@ function search ($message){
 		,
 	]];
 
-	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "💳 Digite a BIN","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown' , 'force_reply' => true , "selective" => true));
+	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "💳 Digite a sua BIN","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown' , 'force_reply' => true , "selective" => true));
 }
 
 
