@@ -892,7 +892,7 @@ function search ($message){
 		,
 	]];
 
-	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "💳 Digite a sua BIN","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown' , 'force_reply' => true , "selective" => true));
+	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "💳 Digite a sua BIN:","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown' , 'force_reply' => true , "selective" => true));
 }
 
 
@@ -1568,7 +1568,7 @@ function compracc($message,$query,$level){
 
 	$menu['inline_keyboard'][] = [['text'=>"← Voltar",'callback_data'=>"ccun"]];
 
-	$txt = "\n*✅ nivel:* _{$level}_\n*💳 Escolha a bandeira preferida:*";
+	$txt = "\n*✅ nivel:* _{$level}_\n*💳 Escolha uma bandeira:*";
 
 	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => $txt,"reply_markup" =>$menu,"reply_to_message_id"=> $message[''],"parse_mode" => 'Markdown'));
 
