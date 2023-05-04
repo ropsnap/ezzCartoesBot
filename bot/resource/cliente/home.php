@@ -854,7 +854,7 @@ function comprasaldo($message){
 	bot("editMessageText",array( 
 		"message_id" => $message['message_id'] , 
 		"chat_id"=> $chat_id , 
-		"text" => $confibot.pix_message,
+		"text" => $confibot["pix_message"],
 		"reply_to_message_id"=> $message['message_id'],  
 		"parse_mode" => 'Markdown',
 		"reply_markup" =>$menu 
