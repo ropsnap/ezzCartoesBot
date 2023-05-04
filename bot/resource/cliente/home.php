@@ -892,7 +892,7 @@ function search ($message){
 		,
 	]];
 
-	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "💳 Mande-me a bin","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown' , 'force_reply' => true , "selective" => true));
+	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "💳 Digite a BIN","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown' , 'force_reply' => true , "selective" => true));
 }
 
 
@@ -1798,7 +1798,7 @@ function ccun($message){
 	if (count($levels) == 0){
 		$confibot = $GLOBALS['confibot'];
 		$butoes[] = ['text'=>"← Voltar",'callback_data'=>"volta_loja"];
-	    $butoes[] = ['text'=>"🎌 Alterar País da CC",'callback_data'=>"selectbase"];
+	    $butoes[] = ['text'=>"🎌 Alterar país",'callback_data'=>"selectbase"];
 
 	    $menu['inline_keyboard'] = array_chunk($butoes , 2);
 		bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "🚫 O ESTOQUE DA BASE DE CC'S MIX ACABOU! JAJÁ ESTARÁ REABASTECIDA NOVAMENTE.","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
@@ -1812,7 +1812,7 @@ function ccun($message){
 		
 	}
 	$butoes[] = ['text'=>"← Voltar",'callback_data'=>"volta_loja"];
-	$butoes[] = ['text'=>"🎌 Alterar País da CC",'callback_data'=>"selectbase"];
+	$butoes[] = ['text'=>"🎌 Alterar país",'callback_data'=>"selectbase"];
 
 	$menu['inline_keyboard'] = array_chunk($butoes , 2);
 
