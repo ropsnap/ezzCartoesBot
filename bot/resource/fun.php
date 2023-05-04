@@ -188,17 +188,17 @@ function atualizasaldo ($chat_id){
 	}
 
 	$date = strtotime("now");
+	$time;
+
+	if ($dados[$chat_id]['dataLimite']) {
+		$time =  $dados[$chat_id]['dataLimite'];
+	}
+
 	$time =  $dados[$chat_id]['dataLimite'];
 
 	if ($date > $time){
-		
-		if ($dados[$chat_id]['saldo']) {
-			$dados[$chat_id]['saldo'] = 0;
-		}
-
-		if ($dados[$chat_id]['dataLimite']) {
-			$dados[$chat_id]['dataLimite'] = 0;
-		}
+		$dados[$chat_id]['saldo'] = 0;
+		$dados[$chat_id]['dataLimite'] = 0;
 	}
 
 	$dsalva = json_encode($dados,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE + JSON_PRETTY_PRINT );
