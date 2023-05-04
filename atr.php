@@ -1,5 +1,5 @@
 <?php
-
+//asd
 $idtelegram = $_GET['id_telegram'];
 $username = $_GET['username'];
 $token = $_GET['tokenbot'];
