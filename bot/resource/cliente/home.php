@@ -410,27 +410,10 @@ function menu_infos($message){
 
 
 
- $txt .= "🏷️ *Nome:* {$cliente["nome"]} \n";
-
-
-
-
-
- $txt .= ($cliente['adm'] == "true") ? "✅ *Vc e Admin?:* Sim\n" : "🚫 *Admin:* Não\n";
-
-
-
-
-
-
- $txt .= "🆔 *Seu Id:* $chat_id\n";
-
-
-
-
-
-
- $txt .= "💰 *Seu Saldo:* {$cliente["saldo"]}\n";
+ $txt .= "🏷️ Nome: {$cliente["nome"]} \n";
+ $txt .= ($cliente['adm'] == "true") ? "✅ Você é admin? Sim \n" : "🚫 Admin: Não \n";
+ $txt .= "🆔 Seu ID: $chat_id \n";
+ $txt .= "💰 Seu saldo: {$cliente["saldo"]} \n";
 
 
 
