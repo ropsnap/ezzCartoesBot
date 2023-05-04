@@ -1681,13 +1681,13 @@ function loja($message){
 
 
 
-$ts1 = $conf['text_store_1']
-$ts2 = $conf['text_store_2']
-$ts3 = $conf['text_store_3']
+$ts1 = $conf['text_store_1'];
+$ts2 = $conf['text_store_2'];
+$ts3 = $conf['text_store_3'];
 
  bot("editMessageText", array( 
- 	"message_id" => $message['message_id'] , 
- 	"chat_id"=> $chat_id , 
+ 	"message_id" => $message['message_id'], 
+ 	"chat_id"=> $chat_id, 
  	"text" => "*Olá $nome, \n\n $ts1 💳 \n\n $ts2 \n\n Nome → $nome \n Saldo → $saldo \n ID → $chat_id* \n\n $ts3",
  	"reply_markup" =>$menu,
  	"reply_to_message_id"=> $message['message_id'],
