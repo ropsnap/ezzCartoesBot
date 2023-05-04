@@ -1817,7 +1817,7 @@ function ccun($message){
 
 	$confibot = $GLOBALS['confibot'];
 
-	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "💳 Comprar CC Unitária.\n\n⚠️ Alertas\n\n→ As infos são todas CHK Live 95%\n→ Todas info já vem com Nome e CPF","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
+	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "💳 Comprar CC unitária\n\n→ As infos são todas CHK Live 95%\n→ Todas info já vem com Nome e CPF","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
 	
 }
 
