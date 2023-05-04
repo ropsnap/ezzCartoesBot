@@ -50,12 +50,12 @@ function clientes($message){
 
 
   [
-  	['text'=> $conf.text_btn_cc_store , 'callback_data'=>"loja"]
+  	['text'=> $conf["text_btn_cc_store"] , 'callback_data'=>"loja"]
   ],
 
   [
-  	['text'=> $conf.text_btn_add_funds , 'callback_data'=>"comprasaldo"] , 
-  	['text'=> $conf.text_btn_informations , 'callback_data'=>"menu_infos"]
+  	['text'=> $conf["text_btn_add_funds"] , 'callback_data'=>"comprasaldo"] , 
+  	['text'=> $conf["text_btn_informations"] , 'callback_data'=>"menu_infos"]
   ],
 
   ]];
