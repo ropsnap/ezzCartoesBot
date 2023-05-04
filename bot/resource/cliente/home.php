@@ -49,10 +49,15 @@ function clientes($message){
 	 $menu =  ['inline_keyboard' => [
 
 
-  [['text'=>"🛍 LOJA DE CCS",'callback_data'=>"loja"]],
+  [
+  	['text'=> $confibot.text_btn_cc_store , 'callback_data'=>"loja"]
+  ],
 
-  [['text'=>"💸 ADD SALDO",'callback_data'=>"comprasaldo"] , ['text'=>"👤 INFORMACOES",'callback_data'=>"menu_infos"]],
-
+  [
+  	['text'=> $confibot.text_btn_add_funds , 'callback_data'=>"comprasaldo"] , 
+  	['text'=> $confibot.text_btn_informations , 'callback_data'=>"menu_infos"]
+  ],
+  
   ]];
 		bot("sendMessage",array("chat_id"=> $chat_id , "text" => $txt,"reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
 	 
@@ -1742,13 +1747,17 @@ function menu($message){
 
  $menu =  ['inline_keyboard' => [
 
+  [
+  	['text'=> $confibot.text_btn_cc_store , 'callback_data'=>"loja"]
+  ],
 
-  [['text'=>"🛍 LOJA DE CCS",'callback_data'=>"loja"]],
-
-  [['text'=>"💸 ADD SALDO",'callback_data'=>"comprasaldo"] , ['text'=>"👤 INFORMACOES",'callback_data'=>"menu_infos"]],
+  [
+  	['text'=> $confibot.text_btn_add_funds , 'callback_data'=>"comprasaldo"] , 
+  	['text'=> $confibot.text_btn_informations , 'callback_data'=>"menu_infos"]
+  ],
 
   ]];
-	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => $txt,"reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
+		bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => $txt,"reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
 	
 }
 
