@@ -1685,7 +1685,14 @@ function loja($message){
 
 
 
- bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "💳 *Olá $nome, bem-vindo(a) a minha loja virtual!\n\n✅ Suas informacoes\nNome: $nome\nSaldo: $saldo\nId: $chat_id*\n\n👉 *Confira as opções abaixo:*","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
+ bot("editMessageText", array( 
+ 	"message_id" => $message['message_id'] , 
+ 	"chat_id"=> $chat_id , 
+ 	"text" => "*Olá $nome, \n\n $confibot['text_store_1'] 💳 \n\n $confibot['text_store_2'] \n\n Nome → $nome \n Saldo → $saldo \n ID → $chat_id* \n\n $confibot['text_store_3']",
+ 	"reply_markup" =>$menu,
+ 	"reply_to_message_id"=> $message['message_id'],
+ 	"parse_mode" => 'Markdown'
+ ));
 
 
 
