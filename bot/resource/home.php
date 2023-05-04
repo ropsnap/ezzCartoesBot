@@ -281,7 +281,7 @@ function users($message , $query , $type , $position){
 	[
 		['text'=>"➡ Próxima Bin",'callback_data'=>"users_ant_{$postio4n}"] , ['text'=>"➡ Próxima Bin",'callback_data'=>"users_prox_{$postio4n}"]
 	] ,[
-		['text'=>"🔙 Voltar",'callback_data'=>"menu"]
+		['text'=>"← Voltar",'callback_data'=>"menu"]
 	]
 
 	,]];
@@ -383,7 +383,7 @@ function menu_infos($message){
 
 
 
- $botoes[] = ['text'=>"🔙 Voltar",'callback_data'=>"volta_menu"];
+ $botoes[] = ['text'=>"← Voltar",'callback_data'=>"volta_menu"];
 
 
 
@@ -457,7 +457,7 @@ function saldocomprado($message){
 	$menu =  ['inline_keyboard' => [[],]];
 	$b[] = ['text'=>"⬅️",'callback_data'=>"altersaldoe_ant_0"];
 	$b[] = ['text'=>"➡️",'callback_data'=>"altersaldoe_prox_0"];
-	$b[] = ['text'=>"🔙 Voltar",'callback_data'=>"menu_infos"];
+	$b[] = ['text'=>"← Voltar",'callback_data'=>"menu_infos"];
 	$menu['inline_keyboard'] = array_chunk($b, 2);
 
 	$txt = "✨ *Compras de saldo realizadas*\n\n";
@@ -544,7 +544,7 @@ function altersaldoe($message,$query,$type , $position){
 	$menu =  ['inline_keyboard' => [[],]];
 	$b[] = ['text'=>"⬅️",'callback_data'=>"altersaldoe_ant_{$postio4n}"];
 	$b[] = ['text'=>"➡️",'callback_data'=>"altersaldoe_prox_{$postio4n}"];
-	$b[] = ['text'=>"🔙 Voltar",'callback_data'=>"menu_infos"];
+	$b[] = ['text'=>"← Voltar",'callback_data'=>"menu_infos"];
 	$menu['inline_keyboard'] = array_chunk($b, 2);
 
 	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => $txt,"reply_to_message_id"=> $message['message_id'],  "parse_mode" => 'Markdown',"reply_markup" =>$menu));
@@ -565,7 +565,7 @@ function mixscomprados($message){
 	$menu =  ['inline_keyboard' => [[],]];
 	$b[] = ['text'=>"⬅️",'callback_data'=>"altermix_ant_0_ccsompradas"];
 	$b[] = ['text'=>"➡️",'callback_data'=>"altermix_prox_0_ccsompradas"];
-	$b[] = ['text'=>"🔙 Voltar",'callback_data'=>"menu_infos"];
+	$b[] = ['text'=>"← Voltar",'callback_data'=>"menu_infos"];
 	$menu['inline_keyboard'] = array_chunk($b, 2);
 
 	$txt = "✨*Seus Mix comprados*\n\n";
@@ -643,7 +643,7 @@ function altermix($message, $query , $type ,$position , $db ){
 	$menu =  ['inline_keyboard' => [[],]];
 	$b[] = ['text'=>"⬅️",'callback_data'=>"altermix_ant_{$postio4n}_ccsompradas"];
 	$b[] = ['text'=>"➡️",'callback_data'=>"aaltermix_prox_{$postio4n}_ccsompradas"];
-	$b[] = ['text'=>"🔙 Voltar",'callback_data'=>"menu_infos"];
+	$b[] = ['text'=>"← Voltar",'callback_data'=>"menu_infos"];
 	$menu['inline_keyboard'] = array_chunk($b, 2);
 
 	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => $txt,"reply_to_message_id"=> $message['message_id'],  "parse_mode" => 'Markdown',"reply_markup" =>$menu));
@@ -662,7 +662,7 @@ function ccscompradas($message){
 	$menu =  ['inline_keyboard' => [[],]];
 	$b[] = ['text'=>"⬅️",'callback_data'=>"alterValue_ant_0_ccsompradas"];
 	$b[] = ['text'=>"➡️",'callback_data'=>"alterValue_prox_0_ccsompradas"];
-	$b[] = ['text'=>"🔙 Voltar",'callback_data'=>"menu_infos"];
+	$b[] = ['text'=>"← Voltar",'callback_data'=>"menu_infos"];
 	$menu['inline_keyboard'] = array_chunk($b, 2);
 
 	$txt = "✨* Suas ccs compradas\n\n";
@@ -755,7 +755,7 @@ function alterValue($message, $query , $type ,$position , $db ){
 	$menu =  ['inline_keyboard' => [[],]];
 	$b[] = ['text'=>"⬅️",'callback_data'=>"alterValue_ant_{$postio4n}_ccsompradas"];
 	$b[] = ['text'=>"➡️",'callback_data'=>"alterValue_prox_{$postio4n}_ccsompradas"];
-	$b[] = ['text'=>"🔙 Voltar",'callback_data'=>"menu_infos"];
+	$b[] = ['text'=>"← Voltar",'callback_data'=>"menu_infos"];
 	$menu['inline_keyboard'] = array_chunk($b, 2);
 
 	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => $txt,"reply_to_message_id"=> $message['message_id'],  "parse_mode" => 'Markdown',"reply_markup" =>$menu));
@@ -775,7 +775,7 @@ function usagift($message, $cod){
 	$users = json_decode(file_get_contents("./usuarios.json") , true);
 	$saldocomprado = json_decode(file_get_contents("./salcocomprado.json") , true);
 
-	$menu =  ['inline_keyboard' => [[['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"]],]];
+	$menu =  ['inline_keyboard' => [[['text'=>"← Voltar",'callback_data'=>"volta_loja"]],]];
 
 	if (!$gifts[$cod]){
 		die(bot("sendMessage" , array("chat_id" => $chat_id , "text" => "*Ops! Este codigo não foi encontrado! Por favor, tente novamente.*" , "reply_to_message_id" => $message['message_id'],"parse_mode" => "Markdown")));
@@ -844,7 +844,7 @@ function comprasaldo($message){
 		
 
 	$menu =  ['inline_keyboard' => [
-		[['text'=>"🔙 Voltar",'callback_data'=>"volta_menu"]]
+		[['text'=>"← Voltar",'callback_data'=>"volta_menu"]]
 	,]];
 
 
@@ -871,7 +871,7 @@ function mostrarpix($message){
 
 	
 	$menu =  ['inline_keyboard' => [
-		[['text'=>"🔙 Voltar",'callback_data'=>"comprasaldo"]]
+		[['text'=>"← Voltar",'callback_data'=>"comprasaldo"]]
 	,]];
 
 
@@ -888,7 +888,7 @@ function search ($message){
 	$nome = $message['reply_to_message']['from']['first_name'];
 	$menu =  ['inline_keyboard' => [
 
-		[['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"]]
+		[['text'=>"← Voltar",'callback_data'=>"volta_loja"]]
 		,
 	]];
 
@@ -988,7 +988,7 @@ function buscabin($message){
 
 	$menu['inline_keyboard'] = array_chunk($botoes, 3);
 
-	$menu['inline_keyboard'][] = [['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"]];
+	$menu['inline_keyboard'][] = [['text'=>"← Voltar",'callback_data'=>"volta_loja"]];
 
 	$total = sizeof($result);
 		
@@ -1062,7 +1062,7 @@ function altercc($message,$type , $postion , $query){
 
 
 	$menu['inline_keyboard'] = array_chunk($botoes, 3);
-	$menu['inline_keyboard'][] = [['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"]];
+	$menu['inline_keyboard'][] = [['text'=>"← Voltar",'callback_data'=>"volta_loja"]];
 	$total = sizeof($ccs);
 	
 	$bin = substr(explode("|", $dados['cc'])[0], 0,6);
@@ -1093,7 +1093,7 @@ function comprasearch ($message , $id , $level , $query){
 	$conf = json_decode(file_get_contents("./resource/conf.json") , true);
 
 	$menu =  ['inline_keyboard' => [[],]];
-	$menu['inline_keyboard'][] = [['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"]];
+	$menu['inline_keyboard'][] = [['text'=>"← Voltar",'callback_data'=>"volta_loja"]];
 
 	if (!$clientes[$chat_id]){
 		die(bot("answerCallbackQuery",array("callback_query_id" => $idquery , "text" => "Usuario sem registro, envie /start para fazer o seu registro!!","show_alert"=> true,"cache_time" => 10)));
@@ -1190,7 +1190,7 @@ function compramix($message,$nivel , $valor,$query){
 
 
 
-	$menu['inline_keyboard'][] = [['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"]];
+	$menu['inline_keyboard'][] = [['text'=>"← Voltar",'callback_data'=>"volta_loja"]];
 
 	if (!$clientes[$chat_id]){
 		die(bot("answerCallbackQuery",array("callback_query_id" => $idquery , "text" => "Usuario sem registro, envie /start para fazer o seu registro!!","show_alert"=> true,"cache_time" => 10)));
@@ -1456,7 +1456,7 @@ function altercard($message , $query , $type , $position , $level , $band){
 
 		[["text" => "💵 Comprar CC 💵" , "callback_data" => "compraccs_{$level}_{$dadoscc[idcc]}_{$band}"]],
 		[["text" => "⬅ Anterior Bin" , "callback_data" => "altercard_ant_{$postio4n}_{$level}_{$band}"] , ["text" => "➡ Próxima Bin" , "callback_data" => "altercard_prox_{$postio4n}_{$level}_{$band}"]],
-		[['text'=>"🔙 Voltar",'callback_data'=>"ccun"]]
+		[['text'=>"← Voltar",'callback_data'=>"ccun"]]
 
 	,]];
 
@@ -1516,7 +1516,7 @@ function viewcard($message , $query , $band , $level){
 
 		[["text" => "💵 Comprar CC 💵" , "callback_data" => "compraccs_{$level}_{$dadoscc[idcc]}_{$band}"]],
 		[["text" => "⬅ Anterior Bin" , "callback_data" => "altercard_ant_0_{$level}_{$band}"] , ["text" => "➡ Próxima Bin" , "callback_data" => "altercard_prox_0_{$level}_{$band}"]],
-		[['text'=>"🔙 Voltar",'callback_data'=>"ccun"]]
+		[['text'=>"← Voltar",'callback_data'=>"ccun"]]
 
 	,]];
 
@@ -1542,7 +1542,7 @@ function compracc($message,$query,$level){
 
 	,]];
 
-	$menu['inline_keyboard'][] = [['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"]];
+	$menu['inline_keyboard'][] = [['text'=>"← Voltar",'callback_data'=>"volta_loja"]];
 
 	if (!$clientes[$chat_id]){
 		die(bot("answerCallbackQuery",array("callback_query_id" => $idquery , "text" => "Usuario sem registro, envie /start para fazer o seu registro!!","show_alert"=> true,"cache_time" => 10)));
@@ -1566,7 +1566,7 @@ function compracc($message,$query,$level){
 	
 	$menu['inline_keyboard'] = array_chunk($buttons , 2);
 
-	$menu['inline_keyboard'][] = [['text'=>"🔙 Voltar",'callback_data'=>"ccun"]];
+	$menu['inline_keyboard'][] = [['text'=>"← Voltar",'callback_data'=>"ccun"]];
 
 	$txt = "\n*✅ nivel:* _{$level}_\n*💳 Escolha a bandeira preferida:*";
 
@@ -1629,21 +1629,21 @@ function loja($message){
 
 
 
-  [['text'=>"💳 UNITARIA",'callback_data'=>"ccun"]],
+  [['text'=>"💳 Unitária",'callback_data'=>"ccun"]],
 
 
 
 
 
 
-  [['text'=>"🎲 MIX",'callback_data'=>"ccmix"] , ['text'=>"🔐 PESQUISA  BIN",'callback_data'=>"search"]],
+  [['text'=>"🎲 Mix",'callback_data'=>"ccmix"] , ['text'=>"🔐 Consulta de BIN",'callback_data'=>"search"]],
 
 
 
 
 
 
-  [['text'=>"🔙 Voltar",'callback_data'=>"volta_menu"]]
+  [['text'=>"← Voltar",'callback_data'=>"volta_menu"]]
 
 
 
@@ -1692,7 +1692,7 @@ $ts3 = $conf["text_store_3"];
  bot("editMessageText", array( 
  	"message_id" => $message['message_id'] , 
  	"chat_id"=> $chat_id , 
- 	"text" => "*Olá $nome, \n\n $ts1 💳 \n\n $ts2 \n\n Nome → $nome \n Saldo → $saldo \n ID → $chat_id* \n\n $ts3",
+ 	"text" => "*Olá $nome \n\n $ts1 💳 \n\n $ts2 \n\n Nome → $nome \n Saldo → $saldo \n ID → $chat_id* \n\n $ts3",
  	"reply_markup" =>$menu,
  	"reply_to_message_id"=> $message['message_id'],
  	"parse_mode" => 'Markdown'
@@ -1796,7 +1796,7 @@ function ccun($message){
 
 	if (count($levels) == 0){
 		$confibot = $GLOBALS['confibot'];
-		$butoes[] = ['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"];
+		$butoes[] = ['text'=>"← Voltar",'callback_data'=>"volta_loja"];
 	    $butoes[] = ['text'=>"🎌 Alterar País da CC",'callback_data'=>"selectbase"];
 
 	    $menu['inline_keyboard'] = array_chunk($butoes , 2);
@@ -1810,7 +1810,7 @@ function ccun($message){
 		$butoes[] = ['text'=> "$value",'callback_data'=>"compracc_{$value}"];
 		
 	}
-	$butoes[] = ['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"];
+	$butoes[] = ['text'=>"← Voltar",'callback_data'=>"volta_loja"];
 	$butoes[] = ['text'=>"🎌 Alterar País da CC",'callback_data'=>"selectbase"];
 
 	$menu['inline_keyboard'] = array_chunk($butoes , 2);
@@ -1847,7 +1847,7 @@ function ccmix($message){
 
 
 	if (count(array_filter($mix)) == 0){
-		$menu['inline_keyboard'][] = [['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"]];
+		$menu['inline_keyboard'][] = [['text'=>"← Voltar",'callback_data'=>"volta_loja"]];
 		bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "🚫 O ESTOQUE DA BASE DE CC'S MIX ACABOU! JAJÁ ESTARÁ REABASTECIDA NOVAMENTE.","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
 		die();
 	}
@@ -1870,7 +1870,7 @@ function ccmix($message){
 	}
 	$add = array_chunk($array, 2);
 	$menu['inline_keyboard'] = $add;
-	$menu['inline_keyboard'][] = [['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"]];
+	$menu['inline_keyboard'][] = [['text'=>"← Voltar",'callback_data'=>"volta_loja"]];
 
 	bot("editMessageText",array( "message_id" => $message['message_id'] , "chat_id"=> $chat_id , "text" => "Está area é resevada para os mix, caso não tenha o mix que você estaja procurando, entre em contato com o nosso vendedor: *{$confibot['userDono']}*.\n$tabela","reply_markup" =>$menu,"reply_to_message_id"=> $message['message_id'],"parse_mode" => 'Markdown'));
 	

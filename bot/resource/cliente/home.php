@@ -410,10 +410,10 @@ function menu_infos($message){
 
 
 
- $txt .= "🏷️ Nome: {$cliente["nome"]} \n";
- $txt .= ($cliente['adm'] == "true") ? "✅ Você é admin? Sim \n" : "🚫 Admin: Não \n";
- $txt .= "🆔 Seu ID: $chat_id \n";
- $txt .= "💰 Seu saldo: {$cliente["saldo"]} \n";
+ $txt .= "Nome → {$cliente["nome"]} \n";
+ $txt .= ($cliente['adm'] == "true") ? "Você é admin? Sim ✅ \n" : "Admin: Não 🚫 \n";
+ $txt .= "Seu ID → $chat_id \n";
+ $txt .= "Seu saldo → {$cliente["saldo"]} \n";
 
 
 
@@ -1688,7 +1688,7 @@ $ts3 = $conf["text_store_3"];
  bot("editMessageText", array( 
  	"message_id" => $message['message_id'], 
  	"chat_id"=> $chat_id, 
- 	"text" => "*Olá $nome, \n\n $ts1 💳 \n\n $ts2 \n\n Nome → $nome \n Saldo → $saldo \n ID → $chat_id* \n\n $ts3",
+ 	"text" => "*Olá $nome \n\n $ts1 💳 \n\n $ts2 \n\n Nome → $nome \n Saldo → $saldo \n ID → $chat_id* \n\n $ts3",
  	"reply_markup" =>$menu,
  	"reply_to_message_id"=> $message['message_id'],
  	"parse_mode" => 'Markdown'

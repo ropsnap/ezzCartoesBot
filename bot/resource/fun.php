@@ -244,7 +244,7 @@ function selectbase($message){
 
 		[['text'=>"CC'S BR 🇧🇷",'callback_data'=>"select_br"]],
 		[['text'=>"CC'S GRINGAS 🇲🇾",'callback_data'=>"select_gringa"]],
-		[['text'=>"🔙 Voltar",'callback_data'=>"volta_loja"]]
+		[['text'=>"← Voltar",'callback_data'=>"volta_loja"]]
 
 	,]];
 
