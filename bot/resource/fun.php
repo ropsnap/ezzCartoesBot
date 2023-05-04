@@ -188,12 +188,6 @@ function atualizasaldo ($chat_id){
 	}
 
 	$date = strtotime("now");
-	$time;
-
-	if ($dados[$chat_id]['dataLimite']) {
-		$time =  $dados[$chat_id]['dataLimite'];
-	}
-
 	$time =  $dados[$chat_id]['dataLimite'];
 
 	if ($date > $time){
