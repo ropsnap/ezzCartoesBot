@@ -17,8 +17,8 @@
         "3": 50,
         "default": 15
     },
-    "welcome": "Oi, {nome} \n\n 👥 Grupo → [t.me/ezzcartoes_grupo](t.me/ezzcartoes_grupo) \n 📢 Canal → [t.me/ezzcartoes](t.me/ezzcartoes) \n ❓ Dúvidas → @ReiDosCartoesVT \n ⚙️ Coder → @zxyddy2",
-    "valorpix": "Oi, {nome} \n\n 👥 Grupo → [t.me/ezzcartoes_grupo](t.me/ezzcartoes_grupo) \n 📢 Canal → [t.me/ezzcartoes](t.me/ezzcartoes) \n ❓ Dúvidas → @ReiDosCartoesVT \n ⚙️ Coder → @zxyddy2",
+    "welcome": "Oi, {nome} \n\n 📢 Canal → [t.me/ezzcartoes](t.me/ezzcartoes) \n 👥 Grupo → [t.me/ezzcartoes_grupo](t.me/ezzcartoes_grupo) \n ❓ Dúvidas → @ReiDosCartoesVT \n ⚙️ Coder → @zxyddy2",
+    "valorpix": "Oi, {nome} \n\n 📢 Canal → [t.me/ezzcartoes](t.me/ezzcartoes) \n 👥 Grupo → [t.me/ezzcartoes_grupo](t.me/ezzcartoes_grupo) \n ❓ Dúvidas → @ReiDosCartoesVT \n ⚙️ Coder → @zxyddy2",
     "text_maintain_mode": "Ops... Estamos em manutenção no momento.",
     "pix_message": "Transfira o valor da recarga para: \n\n PIX → lucas.silva.santos@gmail.com \n Nome → Lucas Silva Santos \n Banco → Mercadopago \n\n Comprovante → @ReiDosCartoesVT",
     "text_btn_cc_store": "🛍 Loja de CC's",
