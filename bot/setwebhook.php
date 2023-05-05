@@ -12,10 +12,8 @@ if (empty($token)){
 		$token = $_GET['token'];
 	}
 }
+
 $server = $_SERVER['SERVER_NAME'];
-if (!$_SERVER['HTTP_X_FORWARDED_PROTO'] and $_SERVER['HTTP_X_FORWARDED_PROTO'] != "https" ){
-	die("A url do bot deve ser https ");
-}
 
 $res = file_get_contents('https://api.telegram.org/bot'.$token.'/setwebhook?url='."https://".$server.$dir);
 
