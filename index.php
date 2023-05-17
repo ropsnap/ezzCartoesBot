@@ -3,7 +3,7 @@
 	$atualdados = json_decode(file_get_contents("bot/resource/conf.json"));
 
 ?>
-
+//uuuuuuuhh
 
 <!DOCTYPE html>
 <html>
